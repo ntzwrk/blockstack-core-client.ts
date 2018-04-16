@@ -1,0 +1,52 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"id": "GetNameInfoResponse.json",
+	"type": "object",
+	"properties": {
+		"address": {
+			"type": "string",
+			"pattern": "^([123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]+)$"
+		},
+		"blockchain": {
+			"type": "string",
+			"pattern": "^bitcoin$"
+		},
+		"expire_block": {
+			"type": "integer",
+			"minimum": 0
+		},
+		"last_txid": {
+			"type": "string",
+			"pattern": "^[0-9a-fA-F]+$"
+		},
+		"status": {
+			"type": "string",
+			"pattern": "^(registered|revoked)$"
+		},
+		"zonefile": {
+			"anyOf": [
+				{ "type": "string" },
+				{
+					"type": "object",
+					"properties": {
+						"error": {
+							"type": "string"
+						}
+					}
+				}
+			]
+		},
+		"zonefile_hash": {
+			"type": "string",
+			"pattern": "^[0-9a-fA-F]{20}$"
+		}
+	},
+	"required": [
+		"address",
+		"blockchain",
+		"last_txid",
+		"status",
+		"zonefile",
+		"zonefile_hash"
+	]
+}

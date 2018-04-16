@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"id": "GetHistoricalZoneFileResponse.json",
+	"anyOf": [
+		{
+			"type": "object",
+			"properties": {
+				"zonefile": { "type": "string" }
+			}
+		},
+		{
+			"type": "object",
+			"properties": {
+				"error": { "type": "string" }
+			}
+		}
+	]
+}
