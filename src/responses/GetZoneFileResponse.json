@@ -1,0 +1,24 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"id": "GetZoneFileResponse.json",
+	"anyOf": [
+		{
+			"type": "object",
+			"properties": {
+				"zonefile": {
+					"type": "string",
+					"pattern": ".+"
+				}
+			}
+		},
+		{
+			"type": "object",
+			"properties": {
+				"error": {
+					"type": "string",
+					"pattern": ".+"
+				}
+			}
+		}
+	]
+}

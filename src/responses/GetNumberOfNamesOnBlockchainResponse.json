@@ -1,0 +1,10 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"id": "GetNumberOfNamesOnBlockchainResponse.json",
+	"type": "object",
+	"properties": {
+		"names_count": {
+			"type": "number"
+		}
+	}
+}

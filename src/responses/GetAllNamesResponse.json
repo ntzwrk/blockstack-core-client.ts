@@ -1,0 +1,9 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"id": "GetAllNamesResponse.json",
+	"type": "array",
+	"items": {
+		"type": "string",
+		"pattern": "^([a-z0-9\\-_.+]{3,37})$"
+	}
+}

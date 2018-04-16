@@ -1,0 +1,11 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"id": "GetConsensusHashResponse.json",
+	"type": "object",
+	"properties": {
+		"consensus_hash": {
+			"type": "string",
+			"pattern": "^[0-9a-fA-F]{32}$"
+		}
+	}
+}

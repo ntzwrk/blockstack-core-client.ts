@@ -1,0 +1,15 @@
+export { AuthRequestResponseJson } from './AuthRequestResponse.json';
+export { GetAllNamespacesResponseJson } from './GetAllNamespacesResponse.json';
+export { GetAllNamesResponseJson } from './GetAllNamesResponse.json';
+export { GetConsensusHashResponseJson } from './GetConsensusHashResponse.json';
+export { GetHistoricalZoneFileResponseJson } from './GetHistoricalZoneFileResponse.json';
+export { GetNameHistoryResponseJson } from './GetNameHistoryResponse.json';
+export { GetNameInfoResponseJson } from './GetNameInfoResponse.json';
+export { GetNamePriceResponseJson } from './GetNamePriceResponse.json';
+export { GetNamesOwnedByAddressResponseJson } from './GetNamesOwnedByAddressResponse.json';
+export { GetNamespaceNamesResponseJson } from './GetNamespaceNamesResponse.json';
+export { GetNamespacePriceResponseJson } from './GetNamespacePriceResponse.json';
+export { GetNumberOfNamesOnBlockchainResponseJson } from './GetNumberOfNamesOnBlockchainResponse.json';
+export { GetOperationsInBlockResponseJson } from './GetOperationsInBlockResponse.json';
+export { GetZoneFileResponseJson } from './GetZoneFileResponse.json';
+export { PingResponseJson } from './PingResponse.json';

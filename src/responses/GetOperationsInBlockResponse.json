@@ -1,0 +1,49 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"id": "GetOperationsInBlockResponse.json",
+	"type": "array",
+	"items": {
+		"type": "object",
+		"properties": {
+			"address": { "type": "string" },
+			"block_number": { "type": "integer" },
+			"burn_address": { "type": "string" },
+			"consensus_hash": { "type": "string" },
+			"op": { "type": "string" },
+			"op_fee": { "type": "integer" },
+			"opcode": { "type": "string" },
+			"preorder_hash": { "type": "string" },
+			"sender": { "type": "string" },
+			"sender_pubkey": {
+				"anyOf": [
+					{ "type": "string" },
+					{ "type": "null" }
+				]
+			},
+			"txid": { "type": "string" },
+			"vtxindex": { "type": "integer" },
+			"first_registered": { "type": "integer" },
+			"importer": {
+				"anyOf": [
+					{ "type": "string" },
+					{ "type": "null" }
+				]
+			},
+			"importer_address": {
+				"anyOf": [
+					{ "type": "string" },
+					{ "type": "null" }
+				]
+			},
+			"keep_data": { "type": "boolean" },
+			"last_renewed": { "type": "integer" },
+			"name": { "type": "string" },
+			"name_hash128": { "type": "string" },
+			"namespace_block_number": { "type": "integer" },
+			"namespace_id": { "type": "string" },
+			"preorder_block_number": { "type": "integer" },
+			"revoked": { "type": "boolean" },
+			"value_hash": { "type": "string" }
+		}
+	}
+}
