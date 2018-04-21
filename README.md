@@ -4,7 +4,7 @@
 ## About
 This is a dead simple JavaScript / TypeScript implementation of the API endpoints of [Blockstack Core](https://github.com/blockstack/blockstack-core).
 
-The version number is supposed to be the same as the one for Blockstack Core.
+This version is compatible to Blockstack Core in version `0.18.0`.
 
 
 ## Installation

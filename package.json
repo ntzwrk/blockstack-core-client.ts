@@ -1,6 +1,6 @@
 {
   "name": "blockstack-core-client.ts",
-  "version": "0.18.0",
+  "version": "1.0.0",
   "author": {
     "name": "vsund"
   },
@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "generate-json-interfaces": "cd ./src/responses/ && find ./ -name \"*.json\" -exec json2ts --style.useTabs --style.singleQuote --input {} --output {}.d.ts \\; && cd -",
-    "build": "yarn run clean && yarn run generate-json-interfaces && tsc && cp -r ./src/responses ./dist/responses",
+    "build": "yarn run clean && yarn run generate-json-interfaces && tsc && touch ./dist/responses && cp ./src/responses/*.d.ts ./dist/responses",
     "clean": "rm -rf ./dist/ && rm -r ./src/responses/*.d.ts"
   },
   "dependencies": {
