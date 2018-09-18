@@ -13,9 +13,9 @@
     "clean": "rm -rf ./dist/ && rm -r ./src/responses/*.d.ts"
   },
   "dependencies": {
-    "@types/node-fetch": "^1.6.8",
-    "json-schema-to-typescript": "^5.4.0",
-    "node-fetch": "^2.1.2",
-    "typescript": "^2.8.1"
+    "@types/node-fetch": "^2.1.2",
+    "json-schema-to-typescript": "^5.7.0",
+    "node-fetch": "^2.2.0",
+    "typescript": "^3.0.3"
   }
 }
